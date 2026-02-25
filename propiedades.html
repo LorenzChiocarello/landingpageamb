@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propiedades Disponibles | NovaHabitat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">Nova<span>Habitat</span></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#nosotros">Nosotros</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="propiedades.html" class="menu-active">Propiedades</a></li>
+          <li><a href="index.html#testimonios">Testimonios</a></li>
+          <li><a href="index.html#contacto" class="btn-nav">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-banner">
+      <div class="container page-banner-content">
+        <span class="eyebrow">Nuestro portafolio</span>
+        <h1>Propiedades Disponibles</h1>
+        <p>Explorá nuestra selecci&oacute;n de propiedades exclusivas en los mejores barrios.</p>
+      </div>
+    </section>
+
+    <section class="prop-page-section" id="propiedades">
+      <input type="radio" id="f-all"      name="pf" checked hidden>
+      <input type="radio" id="f-venta"    name="pf" hidden>
+      <input type="radio" id="f-alquiler" name="pf" hidden>
+      <input type="radio" id="f-casa"     name="pf" hidden>
+      <input type="radio" id="f-depto"    name="pf" hidden>
+
+      <div class="container">
+        <div class="filter-bar">
+          <label for="f-all"      class="filter-btn">Todos</label>
+          <label for="f-venta"    class="filter-btn">En Venta</label>
+          <label for="f-alquiler" class="filter-btn">En Alquiler</label>
+          <label for="f-casa"     class="filter-btn">Casas</label>
+          <label for="f-depto"    class="filter-btn">Departamentos</label>
+        </div>
+
+        <div class="prop-grid">
+
+          <article class="prop-card cat-venta cat-casa" id="prop-1">
+            <div class="prop-img-wrap">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Casa en Palermo">
+              <span class="prop-status venta">En Venta</span>
+            </div>
+            <div class="prop-body">
+              <div class="prop-price">USD 385,000</div>
+              <h2 class="prop-title">Casa en Palermo</h2>
+              <p class="prop-location">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 14S3 9.5 3 6a5 5 0 0110 0c0 3.5-5 8-5 8z"/><circle cx="8" cy="6" r="1.5"/></svg>
+                Palermo, Buenos Aires
+              </p>
+              <p class="prop-desc">Luminosa casa de tres ambientes con acabados premium, cochera cubierta y excelente ubicaci&oacute;n a pasos de la plaza.</p>
+              <div class="prop-features">
+                <span class="prop-feat">3 ambientes</span>
+                <span class="prop-feat">130 m&sup2;</span>
+                <span class="prop-feat">2 ba&ntilde;os</span>
+                <span class="prop-feat">Cochera</span>
+              </div>
+              <div class="prop-actions">
+                <span class="prop-ref">Ref: NH-001</span>
+                <a href="#modal-1" class="btn btn-sm">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="prop-card cat-venta cat-depto" id="prop-2">
+            <div class="prop-img-wrap">
+              <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=900&q=80" alt="Departamento en Recoleta">
+              <span class="prop-status venta">En Venta</span>
+            </div>
+            <div class="prop-body">
+              <div class="prop-price">USD 195,000</div>
+              <h2 class="prop-title">Departamento en Recoleta</h2>
+              <p class="prop-location">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 14S3 9.5 3 6a5 5 0 0110 0c0 3.5-5 8-5 8z"/><circle cx="8" cy="6" r="1.5"/></svg>
+                Recoleta, Buenos Aires
+              </p>
+              <p class="prop-desc">Elegante departamento de dos ambientes con pisos de madera, balc&oacute;n al frente y vistas despejadas al barrio hist&oacute;rico.</p>
+              <div class="prop-features">
+                <span class="prop-feat">2 ambientes</span>
+                <span class="prop-feat">68 m&sup2;</span>
+                <span class="prop-feat">1 ba&ntilde;o</span>
+                <span class="prop-feat">Balc&oacute;n</span>
+              </div>
+              <div class="prop-actions">
+                <span class="prop-ref">Ref: NH-002</span>
+                <a href="#modal-2" class="btn btn-sm">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="prop-card cat-venta cat-depto" id="prop-3">
+            <div class="prop-img-wrap">
+              <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80" alt="PH en Belgrano">
+              <span class="prop-status venta">En Venta</span>
+            </div>
+            <div class="prop-body">
+              <div class="prop-price">USD 445,000</div>
+              <h2 class="prop-title">PH en Belgrano</h2>
+              <p class="prop-location">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 14S3 9.5 3 6a5 5 0 0110 0c0 3.5-5 8-5 8z"/><circle cx="8" cy="6" r="1.5"/></svg>
+                Belgrano, Buenos Aires
+              </p>
+              <p class="prop-desc">Imponente PH de cuatro ambientes con terraza propia, parrilla exterior y doble altura en el living.</p>
+              <div class="prop-features">
+                <span class="prop-feat">4 ambientes</span>
+                <span class="prop-feat">185 m&sup2;</span>
+                <span class="prop-feat">3 ba&ntilde;os</span>
+                <span class="prop-feat">Terraza</span>
+              </div>
+              <div class="prop-actions">
+                <span class="prop-ref">Ref: NH-003</span>
+                <a href="#modal-3" class="btn btn-sm">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="prop-card cat-alquiler cat-depto" id="prop-4">
+            <div class="prop-img-wrap">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=900&q=80" alt="Departamento en Puerto Madero">
+              <span class="prop-status alquiler">En Alquiler</span>
+            </div>
+            <div class="prop-body">
+              <div class="prop-price">USD 2,800 <small>/mes</small></div>
+              <h2 class="prop-title">Depto. en Puerto Madero</h2>
+              <p class="prop-location">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 14S3 9.5 3 6a5 5 0 0110 0c0 3.5-5 8-5 8z"/><circle cx="8" cy="6" r="1.5"/></svg>
+                Puerto Madero, Buenos Aires
+              </p>
+              <p class="prop-desc">Exclusivo departamento con vista panor&aacute;mica al r&iacute;o, amenities completos y seguridad 24 horas.</p>
+              <div class="prop-features">
+                <span class="prop-feat">3 ambientes</span>
+                <span class="prop-feat">95 m&sup2;</span>
+                <span class="prop-feat">2 ba&ntilde;os</span>
+                <span class="prop-feat">Vista al r&iacute;o</span>
+              </div>
+              <div class="prop-actions">
+                <span class="prop-ref">Ref: NH-004</span>
+                <a href="#modal-4" class="btn btn-sm">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="prop-card cat-venta cat-casa" id="prop-5">
+            <div class="prop-img-wrap">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80" alt="Casa en San Isidro">
+              <span class="prop-status venta">En Venta</span>
+            </div>
+            <div class="prop-body">
+              <div class="prop-price">USD 520,000</div>
+              <h2 class="prop-title">Casa en San Isidro</h2>
+              <p class="prop-location">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 14S3 9.5 3 6a5 5 0 0110 0c0 3.5-5 8-5 8z"/><circle cx="8" cy="6" r="1.5"/></svg>
+                San Isidro, GBA
+              </p>
+              <p class="prop-desc">Espl&eacute;ndida casa en country con amp&iacute;simo jard&iacute;n, pileta, quincho equipado y garage doble.</p>
+              <div class="prop-features">
+                <span class="prop-feat">5 ambientes</span>
+                <span class="prop-feat">260 m&sup2;</span>
+                <span class="prop-feat">3 ba&ntilde;os</span>
+                <span class="prop-feat">Pileta</span>
+              </div>
+              <div class="prop-actions">
+                <span class="prop-ref">Ref: NH-005</span>
+                <a href="#modal-5" class="btn btn-sm">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="prop-card cat-alquiler cat-depto" id="prop-6">
+            <div class="prop-img-wrap">
+              <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="Departamento en Palermo Soho">
+              <span class="prop-status alquiler">En Alquiler</span>
+            </div>
+            <div class="prop-body">
+              <div class="prop-price">USD 1,450 <small>/mes</small></div>
+              <h2 class="prop-title">Depto. en Palermo Soho</h2>
+              <p class="prop-location">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 14S3 9.5 3 6a5 5 0 0110 0c0 3.5-5 8-5 8z"/><circle cx="8" cy="6" r="1.5"/></svg>
+                Palermo Soho, Buenos Aires
+              </p>
+              <p class="prop-desc">Acogedor monoambiente reformado, completamente amueblado, con cocina integrada y excelente luminosidad.</p>
+              <div class="prop-features">
+                <span class="prop-feat">1 ambiente</span>
+                <span class="prop-feat">46 m&sup2;</span>
+                <span class="prop-feat">1 ba&ntilde;o</span>
+                <span class="prop-feat">Amueblado</span>
+              </div>
+              <div class="prop-actions">
+                <span class="prop-ref">Ref: NH-006</span>
+                <a href="#modal-6" class="btn btn-sm">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── MODALS ── -->
+
+  <div class="prop-modal" id="modal-1">
+    <a href="#propiedades" class="modal-backdrop"></a>
+    <div class="modal-box">
+      <a href="#propiedades" class="modal-close">&times;</a>
+      <div class="modal-img">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Casa en Palermo">
+      </div>
+      <div class="modal-info">
+        <span class="prop-status venta">En Venta</span>
+        <h3>Casa en Palermo</h3>
+        <div class="modal-price">USD 385,000</div>
+        <p class="modal-ref">Ref: NH-001 &nbsp;&middot;&nbsp; Palermo, Buenos Aires</p>
+        <p class="modal-desc">Luminosa casa de tres ambientes con acabados de primera calidad, cochera cubierta para dos autos y excelente ubicaci&oacute;n a metros de la plaza. Cocina equipada, lavadero, sum y acceso para discapacitados.</p>
+        <div class="modal-features">
+          <span>3 ambientes</span>
+          <span>130 m&sup2;</span>
+          <span>2 ba&ntilde;os</span>
+          <span>Cochera</span>
+          <span>Sum</span>
+        </div>
+        <div class="modal-actions">
+          <a href="https://wa.me/5491112345678?text=Hola!%20Me%20interesa%20la%20propiedad%20NH-001%20(Casa%20en%20Palermo)." target="_blank" rel="noopener" class="btn btn-wa">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M14.56 11.9c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.14.16-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.83-.2-.48-.41-.42-.56-.43-.14 0-.31-.01-.47-.01-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.39 1.01 2.56.12.16 1.75 2.66 4.23 3.73.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.46-.6 1.67-1.18.21-.57.21-1.07.14-1.17-.06-.1-.23-.16-.47-.29M10 0C4.48 0 .13 4.44.13 9.91c0 1.75.46 3.45 1.32 4.95L0 20l5.23-1.37c1.44.79 3.06 1.2 4.77 1.2C15.52 19.83 20 15.38 20 9.91 20 4.44 15.52 0 10 0"/></svg>
+            WhatsApp
+          </a>
+          <a href="mailto:contacto@novahabitat.com?subject=Consulta%20propiedad%20NH-001&body=Hola%2C%20me%20interesa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20propiedad%20NH-001%20(Casa%20en%20Palermo)." class="btn btn-dark-outline">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+            Enviar Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="prop-modal" id="modal-2">
+    <a href="#propiedades" class="modal-backdrop"></a>
+    <div class="modal-box">
+      <a href="#propiedades" class="modal-close">&times;</a>
+      <div class="modal-img">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=900&q=80" alt="Departamento en Recoleta">
+      </div>
+      <div class="modal-info">
+        <span class="prop-status venta">En Venta</span>
+        <h3>Departamento en Recoleta</h3>
+        <div class="modal-price">USD 195,000</div>
+        <p class="modal-ref">Ref: NH-002 &nbsp;&middot;&nbsp; Recoleta, Buenos Aires</p>
+        <p class="modal-desc">Elegante departamento con pisos de madera maciza, balc&oacute;n corrido al frente, cocina americana y vistas despejadas sobre el barrio hist&oacute;rico. Edificio con portero.</p>
+        <div class="modal-features">
+          <span>2 ambientes</span>
+          <span>68 m&sup2;</span>
+          <span>1 ba&ntilde;o</span>
+          <span>Balc&oacute;n</span>
+          <span>Portero</span>
+        </div>
+        <div class="modal-actions">
+          <a href="https://wa.me/5491112345678?text=Hola!%20Me%20interesa%20la%20propiedad%20NH-002%20(Depto%20en%20Recoleta)." target="_blank" rel="noopener" class="btn btn-wa">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M14.56 11.9c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.14.16-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.83-.2-.48-.41-.42-.56-.43-.14 0-.31-.01-.47-.01-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.39 1.01 2.56.12.16 1.75 2.66 4.23 3.73.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.46-.6 1.67-1.18.21-.57.21-1.07.14-1.17-.06-.1-.23-.16-.47-.29M10 0C4.48 0 .13 4.44.13 9.91c0 1.75.46 3.45 1.32 4.95L0 20l5.23-1.37c1.44.79 3.06 1.2 4.77 1.2C15.52 19.83 20 15.38 20 9.91 20 4.44 15.52 0 10 0"/></svg>
+            WhatsApp
+          </a>
+          <a href="mailto:contacto@novahabitat.com?subject=Consulta%20NH-002&body=Hola%2C%20me%20interesa%20la%20propiedad%20NH-002%20(Depto%20en%20Recoleta)." class="btn btn-dark-outline">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+            Enviar Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="prop-modal" id="modal-3">
+    <a href="#propiedades" class="modal-backdrop"></a>
+    <div class="modal-box">
+      <a href="#propiedades" class="modal-close">&times;</a>
+      <div class="modal-img">
+        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80" alt="PH en Belgrano">
+      </div>
+      <div class="modal-info">
+        <span class="prop-status venta">En Venta</span>
+        <h3>PH en Belgrano</h3>
+        <div class="modal-price">USD 445,000</div>
+        <p class="modal-ref">Ref: NH-003 &nbsp;&middot;&nbsp; Belgrano, Buenos Aires</p>
+        <p class="modal-desc">Imponente PH con doble altura en living, terraza propia con parrilla, tres dormitorios en suite y cocina de dise&ntilde;o. Ideal para familias que buscan espacio y exclusividad.</p>
+        <div class="modal-features">
+          <span>4 ambientes</span>
+          <span>185 m&sup2;</span>
+          <span>3 ba&ntilde;os</span>
+          <span>Terraza</span>
+          <span>Parrilla</span>
+        </div>
+        <div class="modal-actions">
+          <a href="https://wa.me/5491112345678?text=Hola!%20Me%20interesa%20la%20propiedad%20NH-003%20(PH%20en%20Belgrano)." target="_blank" rel="noopener" class="btn btn-wa">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M14.56 11.9c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.14.16-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.83-.2-.48-.41-.42-.56-.43-.14 0-.31-.01-.47-.01-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.39 1.01 2.56.12.16 1.75 2.66 4.23 3.73.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.46-.6 1.67-1.18.21-.57.21-1.07.14-1.17-.06-.1-.23-.16-.47-.29M10 0C4.48 0 .13 4.44.13 9.91c0 1.75.46 3.45 1.32 4.95L0 20l5.23-1.37c1.44.79 3.06 1.2 4.77 1.2C15.52 19.83 20 15.38 20 9.91 20 4.44 15.52 0 10 0"/></svg>
+            WhatsApp
+          </a>
+          <a href="mailto:contacto@novahabitat.com?subject=Consulta%20NH-003&body=Hola%2C%20me%20interesa%20la%20propiedad%20NH-003%20(PH%20en%20Belgrano)." class="btn btn-dark-outline">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+            Enviar Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="prop-modal" id="modal-4">
+    <a href="#propiedades" class="modal-backdrop"></a>
+    <div class="modal-box">
+      <a href="#propiedades" class="modal-close">&times;</a>
+      <div class="modal-img">
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=900&q=80" alt="Departamento en Puerto Madero">
+      </div>
+      <div class="modal-info">
+        <span class="prop-status alquiler">En Alquiler</span>
+        <h3>Depto. en Puerto Madero</h3>
+        <div class="modal-price">USD 2,800 <small>/mes</small></div>
+        <p class="modal-ref">Ref: NH-004 &nbsp;&middot;&nbsp; Puerto Madero, Buenos Aires</p>
+        <p class="modal-desc">Exclusivo departamento de tres ambientes con vista panor&aacute;mica al r&iacute;o, amenities completos (gym, piscina, SUM), cochera y seguridad las 24 horas. Piso 18&deg;.</p>
+        <div class="modal-features">
+          <span>3 ambientes</span>
+          <span>95 m&sup2;</span>
+          <span>2 ba&ntilde;os</span>
+          <span>Vista al r&iacute;o</span>
+          <span>Amenities</span>
+        </div>
+        <div class="modal-actions">
+          <a href="https://wa.me/5491112345678?text=Hola!%20Me%20interesa%20la%20propiedad%20NH-004%20(Depto%20en%20Puerto%20Madero)." target="_blank" rel="noopener" class="btn btn-wa">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M14.56 11.9c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.14.16-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.83-.2-.48-.41-.42-.56-.43-.14 0-.31-.01-.47-.01-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.39 1.01 2.56.12.16 1.75 2.66 4.23 3.73.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.46-.6 1.67-1.18.21-.57.21-1.07.14-1.17-.06-.1-.23-.16-.47-.29M10 0C4.48 0 .13 4.44.13 9.91c0 1.75.46 3.45 1.32 4.95L0 20l5.23-1.37c1.44.79 3.06 1.2 4.77 1.2C15.52 19.83 20 15.38 20 9.91 20 4.44 15.52 0 10 0"/></svg>
+            WhatsApp
+          </a>
+          <a href="mailto:contacto@novahabitat.com?subject=Consulta%20NH-004&body=Hola%2C%20me%20interesa%20la%20propiedad%20NH-004%20(Depto%20en%20Puerto%20Madero)." class="btn btn-dark-outline">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+            Enviar Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="prop-modal" id="modal-5">
+    <a href="#propiedades" class="modal-backdrop"></a>
+    <div class="modal-box">
+      <a href="#propiedades" class="modal-close">&times;</a>
+      <div class="modal-img">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80" alt="Casa en San Isidro">
+      </div>
+      <div class="modal-info">
+        <span class="prop-status venta">En Venta</span>
+        <h3>Casa en San Isidro</h3>
+        <div class="modal-price">USD 520,000</div>
+        <p class="modal-ref">Ref: NH-005 &nbsp;&middot;&nbsp; San Isidro, GBA</p>
+        <p class="modal-desc">Espl&eacute;ndida propiedad en country privado con jard&iacute;n dise&ntilde;ado, pileta con deck, quincho equipado, garage doble y cuarto de servicio. A 30 minutos del centro.</p>
+        <div class="modal-features">
+          <span>5 ambientes</span>
+          <span>260 m&sup2;</span>
+          <span>3 ba&ntilde;os</span>
+          <span>Pileta</span>
+          <span>Quincho</span>
+          <span>Garage</span>
+        </div>
+        <div class="modal-actions">
+          <a href="https://wa.me/5491112345678?text=Hola!%20Me%20interesa%20la%20propiedad%20NH-005%20(Casa%20en%20San%20Isidro)." target="_blank" rel="noopener" class="btn btn-wa">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M14.56 11.9c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.14.16-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.83-.2-.48-.41-.42-.56-.43-.14 0-.31-.01-.47-.01-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.39 1.01 2.56.12.16 1.75 2.66 4.23 3.73.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.46-.6 1.67-1.18.21-.57.21-1.07.14-1.17-.06-.1-.23-.16-.47-.29M10 0C4.48 0 .13 4.44.13 9.91c0 1.75.46 3.45 1.32 4.95L0 20l5.23-1.37c1.44.79 3.06 1.2 4.77 1.2C15.52 19.83 20 15.38 20 9.91 20 4.44 15.52 0 10 0"/></svg>
+            WhatsApp
+          </a>
+          <a href="mailto:contacto@novahabitat.com?subject=Consulta%20NH-005&body=Hola%2C%20me%20interesa%20la%20propiedad%20NH-005%20(Casa%20en%20San%20Isidro)." class="btn btn-dark-outline">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+            Enviar Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="prop-modal" id="modal-6">
+    <a href="#propiedades" class="modal-backdrop"></a>
+    <div class="modal-box">
+      <a href="#propiedades" class="modal-close">&times;</a>
+      <div class="modal-img">
+        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="Departamento en Palermo Soho">
+      </div>
+      <div class="modal-info">
+        <span class="prop-status alquiler">En Alquiler</span>
+        <h3>Depto. en Palermo Soho</h3>
+        <div class="modal-price">USD 1,450 <small>/mes</small></div>
+        <p class="modal-ref">Ref: NH-006 &nbsp;&middot;&nbsp; Palermo Soho, Buenos Aires</p>
+        <p class="modal-desc">Acogedor monoambiente completamente reformado y amueblado, con cocina integrada de lujo, ba&ntilde;o moderno y acceso al coraz&oacute;n gastron&oacute;mico del barrio. Disponible inmediato.</p>
+        <div class="modal-features">
+          <span>1 ambiente</span>
+          <span>46 m&sup2;</span>
+          <span>1 ba&ntilde;o</span>
+          <span>Amueblado</span>
+          <span>Disponible ya</span>
+        </div>
+        <div class="modal-actions">
+          <a href="https://wa.me/5491112345678?text=Hola!%20Me%20interesa%20la%20propiedad%20NH-006%20(Depto%20en%20Palermo%20Soho)." target="_blank" rel="noopener" class="btn btn-wa">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M14.56 11.9c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.14.16-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.83-.2-.48-.41-.42-.56-.43-.14 0-.31-.01-.47-.01-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.39 1.01 2.56.12.16 1.75 2.66 4.23 3.73.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.46-.6 1.67-1.18.21-.57.21-1.07.14-1.17-.06-.1-.23-.16-.47-.29M10 0C4.48 0 .13 4.44.13 9.91c0 1.75.46 3.45 1.32 4.95L0 20l5.23-1.37c1.44.79 3.06 1.2 4.77 1.2C15.52 19.83 20 15.38 20 9.91 20 4.44 15.52 0 10 0"/></svg>
+            WhatsApp
+          </a>
+          <a href="mailto:contacto@novahabitat.com?subject=Consulta%20NH-006&body=Hola%2C%20me%20interesa%20la%20propiedad%20NH-006%20(Depto%20en%20Palermo%20Soho)." class="btn btn-dark-outline">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+            Enviar Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light">Nova<span>Habitat</span></a>
+        <p>Inmobiliaria premium con m&aacute;s de 15 a&ntilde;os transformando la manera en que las personas encuentran su hogar ideal.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegaci&oacute;n</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#nosotros">Sobre Nosotros</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="propiedades.html">Propiedades</a></li>
+          <li><a href="index.html#testimonios">Testimonios</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>contacto@novahabitat.com</li>
+          <li>+54 11 1234 5678</li>
+          <li>Buenos Aires, Argentina</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 NovaHabitat. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5491112345678" target="_blank" rel="noopener" class="whatsapp-fab" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <a href="#" class="scroll-top" aria-label="Volver al inicio">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </a>
+
+</body>
+</html>
