@@ -155,6 +155,51 @@ header {
   gap: 1.5rem;
 }
 
+/* ── HAMBURGER BUTTON ── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.hamburger:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.32s ease, opacity 0.22s ease, width 0.22s ease;
+  transform-origin: center;
+}
+
+.hamburger.is-open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.is-open span:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+
+.hamburger.is-open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .logo {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
@@ -814,26 +859,79 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--dark-2);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.40);
+    z-index: 99;
+    animation: menuSlide 0.28s ease;
+  }
+
+  .nav-menu.is-open {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0.75rem 0;
+  }
+
+  .menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .menu li:last-child {
+    border-bottom: none;
+    padding: 0.75rem 1.2rem;
+  }
+
+  .menu a {
+    display: block;
+    font-size: 0.9rem;
+    padding: 0.9rem 1.4rem;
+    border-radius: 0;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .menu a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+  }
+
+  .menu .btn-nav {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-radius: 999px;
+    margin-left: 0;
+    padding: 0.7rem 1.4rem;
+  }
+}
+
+@keyframes menuSlide {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 @media (max-width: 640px) {
   .section {
     padding: 4rem 0;
   }
 
   .nav {
-    flex-wrap: wrap;
-    min-height: auto;
-    padding: 0.8rem 0;
-    gap: 0.6rem;
-  }
-
-  .menu {
-    width: 100%;
-    gap: 0.15rem;
-  }
-
-  .menu a {
-    font-size: 0.78rem;
-    padding: 0.45rem 0.65rem;
+    min-height: 68px;
   }
 
   .hero-content {
